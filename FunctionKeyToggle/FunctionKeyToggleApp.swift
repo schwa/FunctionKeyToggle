@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct FunctionKeyToggleApp: App {
+
+    @State
+    private var viewModel = ViewModel()
+
     var body: some Scene {
-        WindowGroup {
+        Settings {
             ContentView()
+                .environment(viewModel)
+                .navigationTitle("Settings")                
         }
+//        .windowLevel(.floating)
+
+        MenuExtra()
+        .environment(viewModel)
     }
 }
+

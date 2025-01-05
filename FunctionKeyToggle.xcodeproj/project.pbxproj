@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4509F6922D2A144B00755B76 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 4509F6912D2A144B00755B76 /* LaunchAtLogin */; };
+		4509F6952D2A2C2700755B76 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 4509F6942D2A2C2700755B76 /* KeyboardShortcuts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4509F67E2D2A0BC300755B76 /* FunctionKeyToggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionKeyToggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4509F6922D2A144B00755B76 /* LaunchAtLogin in Frameworks */,
+				4509F6952D2A2C2700755B76 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = FunctionKeyToggle;
 			packageProductDependencies = (
+				4509F6912D2A144B00755B76 /* LaunchAtLogin */,
+				4509F6942D2A2C2700755B76 /* KeyboardShortcuts */,
 			);
 			productName = FunctionKeyToggle;
 			productReference = 4509F67E2D2A0BC300755B76 /* FunctionKeyToggle.app */;
@@ -94,6 +103,10 @@
 			);
 			mainGroup = 4509F6752D2A0BC300755B76;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4509F6902D2A144B00755B76 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+				4509F6932D2A2C2700755B76 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4509F67F2D2A0BC300755B76 /* Products */;
 			projectDirPath = "";
@@ -319,6 +332,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4509F6902D2A144B00755B76 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		4509F6932D2A2C2700755B76 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4509F6912D2A144B00755B76 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4509F6902D2A144B00755B76 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+		4509F6942D2A2C2700755B76 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4509F6932D2A2C2700755B76 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4509F6762D2A0BC300755B76 /* Project object */;
 }
